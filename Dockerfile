@@ -9,7 +9,7 @@ MAINTAINER Dave Beckett <dave@dajobe.org>
 
 COPY *.sh /build/
 
-ENV HBASE_VERSION 2.1.2
+ENV HBASE_VERSION 1.3.5
 
 RUN /build/prepare-hbase.sh && \
     cd /opt/hbase && /build/build-hbase.sh \
